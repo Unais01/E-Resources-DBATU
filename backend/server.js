@@ -3,11 +3,12 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
 const { link } = require('fs');
+const { log } = require('console');
 const app = express();
-const PORT = 3000;
+const PORT = 3000||process.env.PORT;
 app.use(cors());
 app.use(cors({
-  origin: 'http://127.0.0.1:5500' // Replace with your frontend URL
+  origin: 'https://e-learning-migrated.vercel.app/' // Replace with your frontend URL
 }));
 
 
@@ -262,6 +263,7 @@ app.use(bodyParser.json());
 // Routes for managing notes and PYQs
 app.get('/', (req, res) => {
   console.log(__dirname);
+  console.log('hello');
   res.sendFile(path.join(__dirname, 'index.html'));
 })
 

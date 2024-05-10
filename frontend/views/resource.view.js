@@ -79,7 +79,7 @@ resourcesContainer.innerHTML=`
 function getPyq() {
         paperResult.appendChild(ul);
         ul.innerHTML = "";
-        let url = `http://localhost:3000/semesters/${semester}/subjects/${subject}/pyqs`
+        let url = `https://e-learning-migrated-1.onrender.com/semesters/${semester}/subjects/${subject}/pyqs`
         fetch(url)
             .then((response) => {
                 return response.json();
@@ -103,7 +103,7 @@ function getPyq() {
     function getNotes() {
         paperResult.appendChild(ul);
         ul.innerHTML = "";
-        let url = `http://localhost:3000/semesters/${semester}/subjects/${subject}/notes`
+        let url = `https://e-learning-migrated-1.onrender.com/semesters/${semester}/subjects/${subject}/notes`
         fetch(url)
             .then((response) => {
                 return response.json();
