@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Environment variables file
+.env
+
+# Build output
+/build/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+
+# Compiled binary addons (https://github.com/TooTallNate/node-gyp/issues/21)
+build/
