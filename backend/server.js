@@ -8,7 +8,7 @@ const app = express();
 const PORT = 3000||process.env.PORT;
 app.use(cors());
 app.use(cors({
-  origin: 'https://e-learning-migrated.vercel.app' // Replace with your frontend URL
+  origin: '*' // Replace with your frontend URL
 }));
 
 
